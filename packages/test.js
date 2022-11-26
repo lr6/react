@@ -1,1 +1,1 @@
-const a = 24
+const a = 24;
