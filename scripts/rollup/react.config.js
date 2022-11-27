@@ -1,5 +1,5 @@
 import { getPackageJSON, resolvePkgPath, getBaseRollupPlugins } from './utils';
-import generatePackageJson from 'rollup-plugin-generate-package-json';
+// import generatePackageJson from 'rollup-plugin-generate-package-json';
 
 const { name, module } = getPackageJSON('react');
 // react包的路径
@@ -12,7 +12,7 @@ export default [
 	{
 		input: `${pkgPath}/${module}`,
 		output: {
-			file: `${distPkgPath}/indes.js`,
+			file: `${distPkgPath}/index.js`,
 			name: 'index.js',
 			format: 'umd'
 		},
