@@ -13,7 +13,7 @@ export default [
 		input: `${pkgPath}/${module}`,
 		output: {
 			file: `${distPkgPath}/index.js`,
-			name: 'index.js',
+			name: 'react',
 			format: 'umd'
 		},
 		plugins: getBaseRollupPlugins()
